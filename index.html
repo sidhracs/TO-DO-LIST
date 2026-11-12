@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="site-shell">
+
+        <!-- NAVIGATION -->
+        <nav class="navbar">
+            <button class="nav-link active" data-page="homePage">
+                Home
+            </button>
+
+            <button class="nav-link" data-page="todoPage">
+                To Do List
+            </button>
+        </nav>
+
+        <main>
+
+            <!-- HOME PAGE -->
+            <section id="homePage" class="page active">
+
+                <div class="home-hero">
+
+                    <div class="intro">
+                        <h1 id="welcomeName">SIDHRA C S</h1>
+
+                        <p id="welcomeStudy">
+                            AI AND ML STUDENTS.
+                        </p>
+
+                        <button class="green-button" id="startButton">
+                            Let's get started ›
+                        </button>
+                    </div>
+
+                    <div class="profile-circle">
+                        <img src="1000072296.jpg" alt="My Profile Photo">
+                    </div>
+
+                </div>
+
+                <div class="study-strip">
+                    <h2>Currently studying</h2>
+
+                    <div class="study-card" id="studyCard">
+                        Your course or subject
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- TO-DO LIST PAGE -->
+            <section id="todoPage" class="page">
+
+                <header class="todo-top">
+
+                    <h1>TO-DO LIST</h1>
+
+                    <div class="details">
+
+                        <label>
+                            Name
+                            <input
+                                id="personName"
+                                type="text"
+                                aria-label="Name"
+                            >
+                        </label>
+
+                        <label>
+                            Date
+                            <input
+                                id="listDate"
+                                type="date"
+                                aria-label="Date"
+                            >
+                        </label>
+
+                    </div>
+
+                </header>
+
+
+                <div class="todo-layout">
+
+                    <!-- TASK LIST -->
+                    <section class="panel">
+
+                        <h2>TASK LIST</h2>
+
+                        <div id="tasks"></div>
+
+                    </section>
+
+
+                    <div>
+
+                        <!-- TOP PRIORITIES -->
+                        <section class="panel">
+
+                            <h2>TOP PRIORITIES</h2>
+
+                            <div id="priorities"></div>
+
+                        </section>
+
+
+                        <!-- REMINDERS -->
+                        <section class="panel">
+
+                            <h2>REMINDER</h2>
+
+                            <div id="reminders"></div>
+
+                        </section>
+
+
+                        <!-- NOTES -->
+                        <section class="panel notes">
+
+                            <h2>NOTES</h2>
+
+                            <textarea
+                                id="notes"
+                                placeholder="Write your notes here..."
+                                aria-label="Notes"
+                            ></textarea>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BUTTONS -->
+                <div class="todo-actions">
+
+                    <button id="saveBtn" type="button">
+                        Save list
+                    </button>
+
+                    <button
+                        id="printBtn"
+                        class="secondary"
+                        type="button"
+                    >
+                        Print
+                    </button>
+
+                    <button
+                        id="clearBtn"
+                        class="secondary"
+                        type="button"
+                    >
+                        Clear all
+                    </button>
+
+                </div>
+
+                <p class="todo-status" id="status">
+                    Your changes are saved automatically in this browser.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
